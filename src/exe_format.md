@@ -22,6 +22,8 @@ In an uncompressed CB executable the application specific data starts at offset 
 		
 Please note that the data location is saved as an offset from the end of the file.
 
+## The interpreter
+The CoolBasic interpreter is written in Blitz Basic, so these executables actually contain two bytecode streams! After UPX decompression, the Blitz bytecode can be found from the resource RCData:1111:1033.
 
 [1]: http://killedwhale.info/?p=43
 [upx_link]: http://upx.sourceforge.net/
